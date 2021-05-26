@@ -14,6 +14,7 @@ Youtube Downloader Mp3 | [Get Api](https://ramra.herokuapp.com/api/yutub/audio?u
 Youtube Downloader Mp4 | [Get Api](https://ramra.herokuapp.com/api/yutub/video?url=https://youtu.be/xYJzwcZWJ0I)
 Youtube Search | [Get Api](https://ramra.herokuapp.com/api/yutub/search?video=hanbunko%20hanabi%20kotori%20remix)
 Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
+Facebook Downloader | [Get Api](https://ramra.herokuapp.com/api/facebook/downloader?url=https://www.facebook.com/197394889304/posts/10160272795609305/?app=fbl)
 
 * EXAMPLE CASE MEDIA API
 
@@ -83,8 +84,19 @@ get_result = await fetchJson(`https://ramra.herokuapp.com/api/pinterest/search?s
 get_buffer = get_result.result
 ini_buffer = await getBuffer(get_buffer)
 client.sendMessage(from, ini_buffer, image,{quoted: mek})
+break      
+```
+
+#### Facebook Downloader
+```javascript
+case 'fbdl' :
+if (args.length == 0) return reply(`Example: ${prefix + command} https://www.facebook.com/197394889304/posts/10160272795609305/?app=fbl`)
+ini_url = args[0]
+ini_url = await fetchJson(`https://ramra.herokuapp.com/api/fbdown/?url=${ini_url}`)
+ini_url = ini_url.result.url
+ini_buffer = await getBuffer(ini_url)
+await client.sendMessage(from, ini_buffer, video,{quoted: mek})
 break
-           
 ```
 
 ### Notice
