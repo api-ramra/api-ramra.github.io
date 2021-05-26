@@ -8,11 +8,11 @@ Disini saya hanya akan membuat contoh script dari javascript saja.
 
 Dibawah ini adalah list ďari rest api website saya
 
-Media Api | Example
+Media Api | Url Api
 ------------ | -----------
-Pinterest Search | [View](https://github.com/api-ramra/api-ramra.github.io/blob/main/README.md#pinterest-search)
+Pinterest Search | [Get](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 
-* LIST MEDIA API
+* LIST CASE MEDIA API
 
 #### Pinterest Search
 ```javascript
