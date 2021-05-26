@@ -12,8 +12,8 @@ Dibawah ini adalah list ďari rest api website saya
 
 Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah)
 
-Media Api
-------------
+Media Api |
+------------ |
 [Media Api](https://github.com/api-ramra/api-ramra.github.io/tree/main/media_api)
 
 ### Thanks To
