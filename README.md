@@ -16,6 +16,7 @@ Youtube Search | [Get Api](https://ramra.herokuapp.com/api/yutub/search?video=ha
 Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 Facebook Downloader | [Get Api](https://ramra.herokuapp.com/api/facebook/downloader?url=https://www.facebook.com/197394889304/posts/10160272795609305/?app=fbl)
 Instagram Stalk | [Get Api](https://ramra.herokuapp.com/api/instagram/stalk?username=jessicajane99)
+Github Stalk | [Get Api](https://ramra.herokuapp.com/api/github/stalk?username=LoliKillers)
 
 * EXAMPLE CASE MEDIA API
 
@@ -90,6 +91,33 @@ ini_txt += `*Posts :* ${ini_result.Jumlah_Post}\n`
 ini_txt += `*Followers :* ${ini_result.Jumlah_Followers}\n`
 ini_txt += `*Following :* ${ini_result.Jumlah_Following}\n`
 ini_txt += `*Bio :* ${ini_result.Biodata}`
+client.sendMessage(from, ini_buffer, image,{quoted: mek, caption: ini_txt})
+break
+```
+
+#### Github Stalk
+```javascript
+case 'githubstalk' :
+if (args.length == 0) return reply(`Example: ${prefix + command} LoliKillers`)
+username = args[0]
+ini_result = await fetchJson(`https://ramra.herokuapp.com/api/github/stalk?username=${username}&apikey=${apikeyrara}`)
+ini_result = ini_result.result
+ini_buffer = await getBuffer(ini_result.profile_pic)
+ini_txt += `*Username :* ${ini_result.username}\n`
+ini_txt += `*Full Name :* ${ini_result.fullname}\n`
+ini_txt += `*Id :* ${ini_result.id}\n`
+ini_txt += `*Company :* ${ini_result.company}\n`
+ini_txt += `*Bio :* ${ini_result.bio}\n`
+ini_txt += `*Hireable :* ${ini_result.hireable}\n`
+ini_txt += `*Followers :* ${ini_result.followers}\n`
+ini_txt += `*Following :* ${ini_result.following}\n`
+ini_txt += `*Location :* ${ini_result.location}\n`
+ini_txt += `*Email :* ${ini_result.email}\n`
+ini_txt += `*Repository :* ${ini_result.public_repo}\n`
+ini_txt += `*Gists :* ${ini_result.gists}\n`
+ini_txt += `*Joined :* ${ini_result.join}\n`
+ini_txt += `*Update :* ${ini_result.last_update}\n`
+ini_txt += `*Link :* ${ini_result.url_profile}\n`
 client.sendMessage(from, ini_buffer, image,{quoted: mek, caption: ini_txt})
 break
 ```
