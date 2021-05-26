@@ -18,7 +18,7 @@ Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?se
 #### Youtube Downloader Mp3
 ```javascript
 case 'ytmp3':
-if (args.length == 0) return reply(`Example: ${prefix}ytmp32 https://youtu.be/xYJzwcZWJ0I`)
+if (args.length == 0) return reply(`Example: ${prefix + command} https://youtu.be/xYJzwcZWJ0I`)
 ini_link = args[0]
 get_result = await fetchJson(`https://ramra.herokuapp.com/api/yutub/audio?url=${ini_link}`)
 ini_result = get_result.result
