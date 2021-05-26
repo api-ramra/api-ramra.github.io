@@ -2,8 +2,7 @@
 
 Website ini saya buat untuk contoh fitur dari [Rest Api Rara](https://ramra.herokuapp.com)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+Disini saya hanya akan membuat contoh script dari javascript saja.
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
