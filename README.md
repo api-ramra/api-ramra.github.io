@@ -54,8 +54,8 @@ break
 
 #### Youtube Search
 ```javascript
-case 'ytsearch2' :
-if (args.length == 0) return reply(`Example: ${prefix + command}  hanbunko hanabi kotori remix`)
+case 'ytsearch' :
+if (args.length == 0) return reply(`Example: ${prefix + command} hanbunko hanabi kotori remix`)
 query = args.join(" ")
 ini_result = await fetchJson(`https://ramra.herokuapp.com/api/yutub/search?video=${query}`)
 get_result = ini_result.result
