@@ -15,6 +15,7 @@ Youtube Downloader Mp4 | [Get Api](https://ramra.herokuapp.com/api/yutub/video?u
 Youtube Search | [Get Api](https://ramra.herokuapp.com/api/yutub/search?video=hanbunko%20hanabi%20kotori%20remix)
 Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 Facebook Downloader | [Get Api](https://ramra.herokuapp.com/api/facebook/downloader?url=https://www.facebook.com/197394889304/posts/10160272795609305/?app=fbl)
+Instagram Stalk | [Get Api](https://ramra.herokuapp.com/api/instagram/stalk?username=jessicajane99)
 
 * EXAMPLE CASE MEDIA API
 
@@ -72,6 +73,24 @@ for (var x of get_result) {
     ini_txt += `\n*-------------------*\n`
 }
 client.sendMessage(from, ini_txt, text,{quoted: mek})
+break
+```
+
+#### Instagram Stalk
+```javascript
+case 'igstalk' :
+if (args.length == 0) return reply(`Example: ${prefix + command} jessicajane99`)
+username = args[0]
+inii_result = await fetchJson(`https://ramra.herokuapp.com/api/instagram/stalk?username=${username}`)
+ini_result = inii_result.result
+ini_buffer = await getBuffer(ini_result.Profile_pic)
+ini_txt += `*Username :* ${ini_result.Username}\n`
+ini_txt += `*Full Name :* ${ini_result.Name}\n`
+ini_txt += `*Posts :* ${ini_result.Jumlah_Post}\n`
+ini_txt += `*Followers :* ${ini_result.Jumlah_Followers}\n`
+ini_txt += `*Following :* ${ini_result.Jumlah_Following}\n`
+ini_txt += `*Bio :* ${ini_result.Biodata}`
+client.sendMessage(from, ini_buffer, image,{quoted: mek, caption: ini_txt})
 break
 ```
 
