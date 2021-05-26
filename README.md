@@ -12,6 +12,7 @@ Media Api | Url Api
 ------------ | -----------
 Youtube Downloader Mp3 | [Get Api](https://ramra.herokuapp.com/api/yutub/audio?url=https://youtu.be/xYJzwcZWJ0I)
 Youtube Downloader Mp4 | [Get Api](https://ramra.herokuapp.com/api/yutub/video?url=https://youtu.be/xYJzwcZWJ0I)
+Youtube Search | [Get Api](https://ramra.herokuapp.com/api/yutub/search?video=hanbunko%20hanabi%20kotori%20remix)
 Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 
 * EXAMPLE CASE MEDIA API
@@ -48,6 +49,28 @@ ini_buffer = await getBuffer(ini_result.thumb)
 client.sendMessage(from, ini_buffer, image,{quoted: mek, caption: ini_txt})
 ini_video = await getBuffer(ini_result.result)
 await client.sendMessage(from, ini_video, video, { mimetype: 'video/mp4', filename: `${ini_result.title}.mp4`, quoted: mek})
+break
+```
+
+#### Youtube Search
+```javascript
+case 'ytsearch2' :
+if (args.length == 0) return reply(`Example: ${prefix + command}  hanbunko hanabi kotori remix`)
+query = args.join(" ")
+ini_result = await fetchJson(`https://ramra.herokuapp.com/api/yutub/search?video=${query}`)
+get_result = ini_result.result
+ini_txt = " "
+for (var x of get_result) {
+    ini_txt += `❏ *Title :* ${x.title}\n`
+    ini_txt += `❏ *Id :* ${x.id}\n`
+    ini_txt += `❏ *Channel :* ${x.channel.name}\n`
+    ini_txt += `❏ *Upload :* ${x.uploadDate}\n`
+    ini_txt += `❏ *Thumbnail :* ${x.thumbnail}\n`
+    ini_txt += `❏ *Views :* ${x.viewCount}\n`
+    ini_txt += `❏ *Link :* https://www.youtube.com/watch?v=${x.id}\n`
+    ini_txt += `\n*-------------------*\n`
+}
+client.sendMessage(from, ini_txt, text,{quoted: mek})
 break
 ```
 
