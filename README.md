@@ -12,9 +12,9 @@ Dibawah ini adalah list ďari rest api website saya
 
 Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah)
 
-Media Api |
------------- |
-Youtube Downloar Mp4 | [Example](https://github.com/api-ramra/api-ramra.github.io/tree/main/media_api)
+Media Api | Example
+------------ | -----------
+Youtube Downloar Mp4 | [View](https://github.com/api-ramra/api-ramra.github.io/tree/main/media_api)
 
 ### Thanks To
 
