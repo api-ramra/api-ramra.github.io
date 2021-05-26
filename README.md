@@ -10,9 +10,9 @@ Dibawah ini adalah list ďari rest api website saya
 
 Media Api | Example
 ------------ | -----------
-Youtube Downloar Mp4 | [View](https://github.com/api-ramra/api-ramra.github.io/blob/main/MEDIA_API.md)
+Pinterest Search | [View](https://github.com/api-ramra/api-ramra.github.io/blob/main/README.md#pinterest-search)
 
-* LIST
+* LIST MEDIA API
 
 #### Pinterest Search
 ```javascript
