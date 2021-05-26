@@ -10,7 +10,7 @@ Dibawah ini adalah list ďari rest api website saya
 
 ### Notice
 
-Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah
+Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah)
 
 ### Thanks To
 
