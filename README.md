@@ -8,13 +8,13 @@ Disini saya hanya akan membuat contoh script dari javascript saja.
 
 Dibawah ini adalah list ďari rest api website saya
 
-### Notice
-
-Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah)
-
 Media Api | Example
 ------------ | -----------
 Youtube Downloar Mp4 | [View](https://github.com/api-ramra/api-ramra.github.io/tree/main/media_api)
+
+### Notice
+
+Saya buat pages ini hanya untuk pemula, dan bagi yang sudah profesional/mastah kalo cuma buat ngehina mending diem aja ok (sungkem mastah)
 
 ### Thanks To
 
