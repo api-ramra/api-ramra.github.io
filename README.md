@@ -10,8 +10,8 @@ Dibawah ini adalah list ďari rest api website saya
 
 Media Api | Url Api
 ------------ | -----------
-Youtube Downloader Mp4 | [get](https://ramra.herokuapp.com/api/yutub/audio?url=https://youtu.be/xYJzwcZWJ0I)
-Pinterest Search | [Get](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
+Youtube Downloader Mp4 | [Get Api](https://ramra.herokuapp.com/api/yutub/audio?url=https://youtu.be/xYJzwcZWJ0I)
+Pinterest Search | [Get Api](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 
 * EXAMPLE CASE MEDIA API
 
