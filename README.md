@@ -14,9 +14,15 @@ Youtube Downloar Mp4 | [View](https://github.com/api-ramra/api-ramra.github.io/b
 
 ## Media Api
 
-* Youtube Downloader Mp4
+* Pinterest Search
 ```javascript
-case 'ytmp4':
+case 'pinterest':
+if (args.length == 0) return reply(`Example: ${prefix + command} Loli`)
+query = args.join(" ")
+get_result = await fetchJson(`https://ramra.herokuapp.com/api/pinterest/search?search=${query}`)
+get_buffer = get_result.result
+ini_buffer = await getBuffer(get_buffer)
+client.sendMessage(from, ini_buffer, image,{quoted: mek})
 break
 ```
 
