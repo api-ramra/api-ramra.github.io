@@ -29,7 +29,7 @@ ini_txt += `❏ *Type :* ${ini_result.ext}\n`
 ini_buffer = await getBuffer(ini_result.thumb)
 client.sendMessage(from, ini_buffer, image,{quoted: mek, caption: ini_txt})
 ini_audio = await getBuffer(ini_result.result)
-await client.sendMessage(from, ini_audio, audio,{mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: raa })
+await client.sendMessage(from, ini_audio, audio,{mimetype: 'video/mp4', filename: `${ini_result.title}.mp4`, quoted: mek })
 break
 ```
 
