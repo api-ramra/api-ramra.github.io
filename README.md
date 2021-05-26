@@ -12,7 +12,7 @@ Media Api | Url Api
 ------------ | -----------
 Pinterest Search | [Get](https://ramra.herokuapp.com/api/pinterest/search?search=loli)
 
-* LIST CASE MEDIA API
+* EXAMPLE CASE MEDIA API
 
 #### Pinterest Search
 ```javascript
