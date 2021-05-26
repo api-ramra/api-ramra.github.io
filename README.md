@@ -12,9 +12,9 @@ Media Api | Example
 ------------ | -----------
 Youtube Downloar Mp4 | [View](https://github.com/api-ramra/api-ramra.github.io/blob/main/MEDIA_API.md)
 
-## Media Api
+* LIST
 
-* Pinterest Search
+#### Pinterest Search
 ```javascript
 case 'pinterest':
 if (args.length == 0) return reply(`Example: ${prefix + command} Loli`)
